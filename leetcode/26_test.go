@@ -20,6 +20,11 @@ func TestRemoveDuplicates(t *testing.T) {
 			nums: []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4},
 			want: []int{0, 1, 2, 3, 4},
 		},
+		{
+			name: "Test 3",
+			nums: []int{5},
+			want: []int{5},
+		},
 	}
 
 	for _, tt := range tests {
