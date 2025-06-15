@@ -27,6 +27,48 @@ func TestRemoveElement(t *testing.T) {
 			want:         5,
 			wantElements: []int{0, 1, 3, 0, 4},
 		},
+		{
+			name:         "Test 3",
+			nums:         []int{2},
+			val:          3,
+			want:         1,
+			wantElements: []int{2},
+		},
+		{
+			name:         "Test 4",
+			nums:         []int{1, 2},
+			val:          3,
+			want:         2,
+			wantElements: []int{1, 2},
+		},
+		{
+			name:         "Test 5",
+			nums:         []int{1},
+			val:          1,
+			want:         0,
+			wantElements: []int{},
+		},
+		{
+			name:         "Test 6",
+			nums:         []int{3, 3},
+			val:          3,
+			want:         0,
+			wantElements: []int{},
+		},
+		{
+			name:         "Test 7",
+			nums:         []int{4, 5},
+			val:          5,
+			want:         1,
+			wantElements: []int{4},
+		},
+		{
+			name:         "Test 8",
+			nums:         []int{4, 5},
+			val:          4,
+			want:         1,
+			wantElements: []int{5},
+		},
 	}
 
 	for _, tt := range tests {
