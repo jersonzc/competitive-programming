@@ -89,8 +89,6 @@ func assertInts(t testing.TB, got, want int) {
 
 func assertKElements(t testing.TB, k int, got, want []int) {
 	t.Helper()
-	sort.Ints(got[:k])
-	sort.Ints(want)
 	for i := 0; i < k; i++ {
 		if got[i] != want[i] {
 			t.Errorf("got %v want %v", got[:k], want)
