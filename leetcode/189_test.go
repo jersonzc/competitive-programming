@@ -36,6 +36,12 @@ func TestRotate(t *testing.T) {
 			k:    10,
 			want: []int{5},
 		},
+		{
+			name: "Test 5",
+			nums: []int{1, 2},
+			k:    0,
+			want: []int{1, 2},
+		},
 	}
 
 	for _, tt := range tests {
