@@ -42,7 +42,7 @@ func TestRotate(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			rotate(tt.nums, tt.k)
 			if !reflect.DeepEqual(tt.nums, tt.want) {
-				t.Errorf("merge() = %v, want %v", tt.nums, tt.want)
+				t.Errorf("rotate() = %v, want %v", tt.nums, tt.want)
 			}
 		})
 	}
